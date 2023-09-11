@@ -1,0 +1,23 @@
+body {
+  color: whitesmoke;
+  background-color: rgb(41, 41, 44);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+  display:flex;
+  justify-content: space-around;
+  background-color: rgb(27, 112, 158);
+  margin-top: 1rem;
+  padding: .5rem;
+}
+
+nav>a {
+  color:whitesmoke;
+  text-decoration: none;
+  padding: .5rem;
+}
+
+nav>a.selected {
+  border: 1px solid white;
+}
