@@ -4,6 +4,7 @@ import { Link, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './Home';
 import Users from './Users';
 import Posts from './Posts';
+import User from './User';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -41,6 +42,8 @@ function App() {
       <Route path='/' element={ <Home /> }/>
       <Route path='/users' element={ <Users users={ users }/> }/>
       <Route path='/posts' element={ <Posts posts={ posts }/> }/>
+
+      <Route path='/users/:id' element={ <User users={ users }/> }/>
       </Routes>
     
     </>

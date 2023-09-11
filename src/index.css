@@ -18,6 +18,15 @@ nav>a {
   padding: .5rem;
 }
 
+li>a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+div>a {
+  color:whitesmoke
+}
+
 nav>a.selected {
   border: 1px solid white;
 }
