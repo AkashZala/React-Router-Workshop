@@ -4,8 +4,12 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#title {
+  margin-left: 2rem;
+}
+
 nav {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   background-color: rgb(27, 112, 158);
   margin-top: 1rem;
@@ -13,20 +17,73 @@ nav {
 }
 
 nav>a {
-  color:whitesmoke;
+  color: whitesmoke;
   text-decoration: none;
   padding: .5rem;
 }
 
-li>a {
+nav>a.selected {
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+a {
   color: whitesmoke;
   text-decoration: none;
 }
 
-div>a {
-  color:whitesmoke
+.home {
+  text-align: center;
+  margin-top: 10%;
 }
 
-nav>a.selected {
-  border: 1px solid white;
+.users>h1,
+.posts>h1 {
+  padding: 0 0 0 3rem;
+}
+
+.users>ul {
+  padding: 0 0 0 0;
+}
+
+.users>ul>li {
+  list-style-type: none;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.userContainer,
+.postContainer {
+  padding: 2rem 0 0 0;
+}
+
+.goBack {
+  background-color: rgb(98, 167, 205);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0 0 0 1rem;
+}
+
+.goBack:hover {
+  background-color: whitesmoke;
+  color: rgb(27, 112, 158);
+  transition: .5s;
+}
+
+.user,
+.post {
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.posts>ul>li {
+  list-style-type: none;
+  padding: 0 0 1rem 0;
+}
+
+.users>ul>li:hover,
+.posts>ul>li:hover {
+  text-decoration: underline;
 }
